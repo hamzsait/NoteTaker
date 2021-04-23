@@ -1,7 +1,7 @@
 # Note Taker
 ## Introduction
 
-This week's assingment was to build a note taking website using an Express.js back interacting with data from a JSON file. In addition, this project needed to be deployed on Heroku. 
+This week's assingment was to build a note taking website using an Express.js backend interacting with data from a JSON file. In addition, this project needed to be deployed on Heroku. 
 
 ### 1. Home Page
 
@@ -22,7 +22,7 @@ As a bonus to this assignment, I have added delete buttons for each note. These 
 
 ### 4. Save and New Buttons
 
-In order to save a note you can click the save icon on the left and to write a new note click the pen icon on the right.
+In order to save a note you can click the save icon on the left, and to write a new note click the pen icon on the right.
 
 ![saveNewButtons](./images/saveNewButtons.png)
 
