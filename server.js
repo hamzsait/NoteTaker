@@ -6,6 +6,15 @@ const PORT = 3000;
 
 function addJSON(item){
     output = JSON.parse(fs.readFileSync('./db/db.json'))
+    for (o of output){
+        if (o.id == item.id){
+            o.title = item.title
+            o.text = item.text
+            output = JSON.stringify(output)
+            fs.writeFile('./db/db.json',output,(err) => console.log(err))
+            return
+        }
+    }
     output.push(item)
     index = 0
     for (o of output){
@@ -30,7 +39,6 @@ function deleteJSON(id,res){
             o.id = index
             index += 1
         }
-    console.log(output)
     output = JSON.stringify(output)
     fs.writeFile('./db/db.json',output,(err) => console.log(err))
     return
